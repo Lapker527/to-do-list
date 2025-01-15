@@ -1,0 +1,14 @@
+version: "2.32.3"
+services:
+  backend:
+    build:
+      context: project1
+    restart: always
+    ports:
+      - "8000:8000"
+
+  frontend:
+    build:
+      context: todo-frontend
+    ports:
+      - "80:80"
